@@ -14,17 +14,15 @@ This code is to run intelliseq's task of fastqc:
 
 This line lists all sample names based on the file_1.fq.gz file_2.fq.gz naming convention:
 
-`ls */*/*1.fq.gz | xargs -i bash -c 'BASENAME2=$(echo {} | cut -d "." -f 1 | cut -d "_" -f 1,2); echo $BASENAME2' > samples.txt`
+`ls */*/*1.fq.gz | xargs -i bash -c 'BASENAME2=$(echo {} | cut -d "." -f 1 | cut -d "_" -f 1); echo $BASENAME2' > samples.txt`
 
 
 To generate json input files (generated earlier with WOMtool) from names:
-`less samples.txt | xargs -i bash -c 'echo "{\"quality_check_fastqc_workflow.quality_check_fastqc.fastq_1\":\"{}_1.fq.gz\",\"quality_check_fastqc_workflow.quality_check_fastqc.fastq_2\":\"{}_2.fq.gz\"}">{}-input.json'`
+`less samples.txt | xargs -i bash -c 'echo "{\"qc_fq_fastqc_workflow.qc_fq_fastqc.fastq_1\":\"{}_1.fq.gz\",\"qc_fq_fastqc_workflow.qc_fq_fastqc.fastq_2\":\"{}_2.fq.gz\"}">{}-input.json'`
 
 
 To run the workflow on an example file: 
-`java -jar /opt/tools/cromwell/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/master/src/main/wdl/tasks/quality-check-fastqc/v0.1/quality-check-fastqc.wdl -i ./fq/H011/H011_1-input.json > H011_1-log.json`
-
-** there are problems with the workflow **
+`java -jar /opt/tools/cromwell/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/qc-fq-fastqc/latest/qc-fq-fastqc.wdl -i ./fq/H011/H011-input.json > H011-log.json`
 
 
 To run the workflow on all files: `less partn.txt | xargs -i bash -c 'java -jar /opt/tools/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/generate-fastqc-report/v0.1/generate-fastqc-report.wdl -i {}-input.json > log-{}.txt' &` *the '&' sign at the end of line tells bash to run whatever command in the background
