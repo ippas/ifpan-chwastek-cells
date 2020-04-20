@@ -18,12 +18,13 @@ This line lists all sample names based on the file_1.fq.gz file_2.fq.gz naming c
 
 
 To generate json input files (generated earlier with WOMtool) from names:
-`less samples.txt | xargs -i bash -c 'echo "{\"generate_fastqc_report_workflow.generate_fastqc_report.fastq_1\":\"{}_1.fq.gz\",\"generate_fastqc_report_workflow.generate_fastqc_report.fastq_2\":\"{}_2.fq.gz\"}">{}-input.json'`
+`less samples.txt | xargs -i bash -c 'echo "{\"quality_check_fastqc_workflow.quality_check_fastqc.fastq_1\":\"{}_1.fq.gz\",\"quality_check_fastqc_workflow.quality_check_fastqc.fastq_2\":\"{}_2.fq.gz\"}">{}-input.json'`
 
-** need to fix the input,not workin atm **
 
 To run the workflow on an example file: 
-`java -jar /opt/tools/cromwell/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/master/src/main/wdl/tasks/quality-check-fastqc/v0.1/quality-check-fastqc.wdl -i ./fq/H011/H011_1-input.json > H011_1-input.json`
+`java -jar /opt/tools/cromwell/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/master/src/main/wdl/tasks/quality-check-fastqc/v0.1/quality-check-fastqc.wdl -i ./fq/H011/H011_1-input.json > H011_1-log.json`
+
+** there are problems with the workflow **
 
 
 To run the workflow on all files: `less partn.txt | xargs -i bash -c 'java -jar /opt/tools/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/generate-fastqc-report/v0.1/generate-fastqc-report.wdl -i {}-input.json > log-{}.txt' &` *the '&' sign at the end of line tells bash to run whatever command in the background
