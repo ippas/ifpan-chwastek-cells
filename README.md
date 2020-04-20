@@ -25,7 +25,7 @@ To run the workflow on an example file:
 `java -jar /opt/tools/cromwell/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/qc-fq-fastqc/latest/qc-fq-fastqc.wdl -i ./fq/H011/H011-input.json > H011-log.json`
 
 
-To run the workflow on all files: `less partn.txt | xargs -i bash -c 'java -jar /opt/tools/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/generate-fastqc-report/v0.1/generate-fastqc-report.wdl -i {}-input.json > log-{}.txt' &` *the '&' sign at the end of line tells bash to run whatever command in the background
+To run the workflow on all files: `less samples.txt | xargs -i bash -c 'java -jar /opt/tools/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/qc-fq-fastqc/latest/qc-fq-fastqc.wdl -i {}-input.json > log-{}.txt' &` *the '&' sign at the end of line tells bash to run whatever command in the background
 
 
 Multiqc was used to generate the final report, in this [docker container](https://hub.docker.com/r/ewels/multiqc). Command: `docker run --rm -v $PWD:/data ewels/multiqc:latest multiqc /data -o /data`.
