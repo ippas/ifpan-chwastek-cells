@@ -28,6 +28,8 @@ To run the workflow on an example file:
 To run the workflow on all files: `less samples.txt | xargs -i bash -c 'java -jar /opt/tools/cromwell/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/qc-fq-fastqc/latest/qc-fq-fastqc.wdl -i {}-input.json > {}-log.txt' &` *the '&' sign at the end of line tells bash to run whatever command in the background
 
 
+* alternatively I am trying to use the whole pipeline
+
 Multiqc was used to generate the final report, in this [docker container](https://hub.docker.com/r/ewels/multiqc). Command: `docker run --rm -v $PWD:/data ewels/multiqc:latest multiqc /data -o /data`.
 
 + add link to fastqc report
