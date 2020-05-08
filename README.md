@@ -20,7 +20,8 @@ echo ], \"rna_seq_paired_end.organism_name\": \"Homo Sapiens\", \"rna_seq_paired
 ls */*/*2.fq.gz | xargs -i bash -c 'echo \" {} \"',
 echo ], \"rna_seq_paired_end.release_version\": \"100\" }
 ```
-which was manually post-processed (3 excess commas deleted - these at the end of each file list)
+which was manually post-processed (3 excess commas deleted - these at the end of each file list and all spaces deleted: 
+`sed -i 's/ //g' input.json`)
 
 
 
