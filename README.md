@@ -23,6 +23,8 @@ echo ], \"rna_seq_paired_end.release_version\": \"100\" }
 which was manually post-processed (3 excess commas deleted - these at the end of each file list)
 
 
+
+
 3. Command to run the whole pipeline:
 
 ############`less samples.txt | xargs -i bash -c 'java -jar /opt/tools/cromwell/cromwell-44.jar run https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/qc-fq-fastqc/latest/qc-fq-fastqc.wdl -i {}-input.json > {}-log.txt' &` *the '&' sign at the end of line tells bash to run whatever command in the background
