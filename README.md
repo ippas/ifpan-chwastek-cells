@@ -11,7 +11,7 @@ Patients cells treated with 3 compounds (4 h, 10 ng/ml), 2-TNFa, 3-LPS, 4-IFg.
 
 ##### Analysis steps:
 
-1. Preprocessing was performed with [intelliseq workflow](rna-seq-paired-end.wdl), whole pipeline with all of the tasks is avaiable in this repository. Example bco object produced by this pipeline is available [here](bco.json)
+1. Preprocessing was performed with [intelliseq workflow](rna-seq-paired-end.wdl). Example bco object produced by this pipeline is available [here](bco.json)
 
 2. Inputs were prepared with the following bash script and processed in batches of 10:
 
