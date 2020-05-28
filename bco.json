@@ -1,0 +1,4779 @@
+{
+   "bco_spec_version": "https://w3id.org/biocompute/1.3.0/",
+   "bco_id": "https://intelliseq.com/flow/fdb3091e-5420-46b9-b1f6-e6e88e94bac1",
+   "provenance_domain": {
+      "name": "rna_seq_paired_end",
+      "version": "latest",
+      "steps": [
+         {
+            "name": "rna_seq_qc_stats",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_ensembl_data",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_concat_summary",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffnorm",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_0",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_1",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_2",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_3",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_4",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_5",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_6",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_7",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_8",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_fastqc_9",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_0",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_1",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_2",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_3",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_4",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_5",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_6",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_7",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_8",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_hisat_9",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_0",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_1",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_2",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_3",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_4",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_5",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_6",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_7",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_8",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         },
+         {
+            "name": "rna_seq_cuffquant_9",
+            "version": "latest",
+            "pipeline_name": "rna_seq_paired_end"
+         }
+      ]
+   },
+   "execution_domain": [
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-qc-stats/latest/rna-seq-qc-stats.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {},
+            {
+               "fastqc-basic-statistics-rna-seq.py": "1.0.0"
+            },
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_qc_stats",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-ensembl-data/latest/rna-seq-ensembl-data.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_ensembl_data",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-concat-summary/latest/rna-seq-concat-summary.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "python3-pip": "20.0.2-5",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {},
+            {
+               "concat-summary-files-rna-seq.py": "1.0.0"
+            },
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_concat_summary",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffnorm/latest/rna-seq-cuffnorm.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffnorm",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.33.1-0.1ubuntu3",
+               "jo": "1.1-1",
+               "jq": "1.5+dfsg-2build1",
+               "curl": "7.64.0-2ubuntu1.2",
+               "wget": "1.20.1-1ubuntu4",
+               "unzip": "6.0-22ubuntu1",
+               "libfontconfig1": "2.13.1-2ubuntu2",
+               "python3-pip": "18.1-5",
+               "python3-dev": "3.7.3-1",
+               "locales": "2.29-0ubuntu2"
+            },
+            {
+               "openjdk": "11.0.6_10",
+               "fastqc-0.11.9": "FastQC-v0.11.9"
+            },
+            {
+               "simple-removal-of-specified-format-field-from-vcf.py": "b'0.0.1",
+               "split-vcf-file.py": "",
+               "annotate-vcf-with-a-dictionary.py": "b'0.0.1",
+               "annotsv-tsv-to-vcf.py": "b'0.0.1",
+               "quality-check.py": "",
+               "annotate-snpeff-vcf-with-genes-symbols.py": "b'0.0.1",
+               "vcf-anno-ghr.py": "",
+               "split-fastq-by-lines.py": "b'1.0.0",
+               "collect-hs-metrics.py": "0.0.1",
+               "translate-report.py": "0.0.2",
+               "remove-records-remaining-in-ann-field-after-filtering-by-snpeff-impact.py": "",
+               "translate-values-of-a-dictionary.py": "b'0.0.1",
+               "annotate-vcf-with-tsv.py": "",
+               "cut-samples-from-vcf.py": "b'0.0.1",
+               "group-calling-intervals.py": "b'0.0.1",
+               "vcftojson.py": "",
+               "create-grouped-calling-interval.py": "0.0.1",
+               "filter-vcf-by-gene-panel.py": "b'0.0.1",
+               "flag-multiallelic-sites.py": "b'0.0.1",
+               "keep-or-remove-vcf-fields.py": "b'0.0.1",
+               "sort-info-columns-in-vcf.py": "b'0.0.1",
+               "split-variants-by-acmg-classification.py": "1.0.2",
+               "create-a-dictionary-from-flat-file-with-two-columns.py": "b'0.0.1",
+               "grouping-interval.py": "0.0.1",
+               "exon-coverage.py": "",
+               "add-error-warning-json.py": "0.0.1",
+               "vcftocsv.py": ""
+            },
+            {
+               "name": "Ubuntu",
+               "version": 19.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_fastqc_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "unzip": "6.0-25ubuntu1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "samtools": "1.10",
+               "hisat2": "2.2.0"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_hisat_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "script": "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl",
+         "script_driver": "shell",
+         "software_prerequisites": [
+            {
+               "uuid-runtime": "2.34-0.1ubuntu9",
+               "jo": "1.1-1",
+               "jq": "1.6-1",
+               "curl": "7.68.0-1ubuntu2",
+               "wget": "1.20.3-1ubuntu1",
+               "libcurl4-openssl-dev": "7.68.0-1ubuntu2",
+               "build-essential": "12.8ubuntu1",
+               "libz-dev": "",
+               "libncurses5-dev": "6.2-0ubuntu2",
+               "libbz2-dev": "1.0.8-2",
+               "liblzma-dev": "5.2.4-1",
+               "python3-pip": "20.0.2-5ubuntu1",
+               "python3-dev": "3.8.2-0ubuntu2",
+               "locales": "2.31-0ubuntu9"
+            },
+            {
+               "cufflinks": "2.2.1"
+            },
+            {},
+            {
+               "name": "Ubuntu",
+               "version": 20.04
+            }
+         ],
+         "external_data_endpoints": [
+            {}
+         ],
+         "name": "rna_seq_cuffquant_9",
+         "pipeline_name": "rna_seq_paired_end"
+      }
+   ],
+   "parametric_domain": [
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_qc_stats",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_qc_stats",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 34,
+         "name": "rna_seq_qc_stats",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/task_rna-seq-qc-stats:1.0.0",
+         "name": "rna_seq_qc_stats",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "605M",
+         "name": "rna_seq_qc_stats",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_ensembl_data",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_ensembl_data",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 4778,
+         "name": "rna_seq_ensembl_data",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_ensembl_data",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_ensembl_data",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_concat_summary",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_concat_summary",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 38,
+         "name": "rna_seq_concat_summary",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/task_rna-seq-concat-summary:1.0.0",
+         "name": "rna_seq_concat_summary",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "605M",
+         "name": "rna_seq_concat_summary",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffnorm",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffnorm",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 264,
+         "name": "rna_seq_cuffnorm",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffnorm",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffnorm",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 790,
+         "name": "rna_seq_fastqc_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 832,
+         "name": "rna_seq_fastqc_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 829,
+         "name": "rna_seq_fastqc_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 817,
+         "name": "rna_seq_fastqc_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 848,
+         "name": "rna_seq_fastqc_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 797,
+         "name": "rna_seq_fastqc_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 757,
+         "name": "rna_seq_fastqc_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 738,
+         "name": "rna_seq_fastqc_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 708,
+         "name": "rna_seq_fastqc_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_fastqc_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_fastqc_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 773,
+         "name": "rna_seq_fastqc_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/fastqc:1.0.0",
+         "name": "rna_seq_fastqc_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "845M",
+         "name": "rna_seq_fastqc_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 7877,
+         "name": "rna_seq_hisat_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 8149,
+         "name": "rna_seq_hisat_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 8116,
+         "name": "rna_seq_hisat_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 8014,
+         "name": "rna_seq_hisat_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 8156,
+         "name": "rna_seq_hisat_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 7714,
+         "name": "rna_seq_hisat_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 7541,
+         "name": "rna_seq_hisat_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 7376,
+         "name": "rna_seq_hisat_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 6943,
+         "name": "rna_seq_hisat_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_hisat_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_hisat_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 7697,
+         "name": "rna_seq_hisat_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/hisat2:1.0.0",
+         "name": "rna_seq_hisat_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "623M",
+         "name": "rna_seq_hisat_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1627,
+         "name": "rna_seq_cuffquant_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_0",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1731,
+         "name": "rna_seq_cuffquant_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_1",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1749,
+         "name": "rna_seq_cuffquant_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_2",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1666,
+         "name": "rna_seq_cuffquant_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_3",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1716,
+         "name": "rna_seq_cuffquant_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_4",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1595,
+         "name": "rna_seq_cuffquant_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_5",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1544,
+         "name": "rna_seq_cuffquant_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_6",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1531,
+         "name": "rna_seq_cuffquant_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_7",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1424,
+         "name": "rna_seq_cuffquant_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_8",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "cpu",
+         "value": 12,
+         "name": "rna_seq_cuffquant_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "memory",
+         "value": 125.803,
+         "name": "rna_seq_cuffquant_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "tasktime",
+         "value": 1583,
+         "name": "rna_seq_cuffquant_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_image",
+         "value": "intelliseqngs/cufflinks:1.0.0",
+         "name": "rna_seq_cuffquant_9",
+         "pipeline_name": "rna_seq_paired_end"
+      },
+      {
+         "param": "docker_size",
+         "value": "769M",
+         "name": "rna_seq_cuffquant_9",
+         "pipeline_name": "rna_seq_paired_end"
+      }
+   ],
+   "description_domain": {
+      "keywords": [
+         "FastQC",
+         "alignment",
+         "cuffnorm",
+         "cuffquant",
+         "ensembl dataset",
+         "extract splice sites",
+         "hisat2",
+         "keywords",
+         "some"
+      ],
+      "pipeline_steps": [
+         {
+            "task_info": {
+               "name": "rna_seq_qc_stats",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Getting basic statistics (paired-end)",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "zip_files",
+                  "type": "Array[Array[File]]",
+                  "description": "zip files (paired-end)"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "basic_statistics_csv",
+                  "type": "File",
+                  "copy": "true",
+                  "description": "basic statistics in CSV",
+                  "constraints": {
+                     "extension": [
+                        "csv"
+                     ]
+                  }
+               },
+               {
+                  "name": "basic_statistics_excel",
+                  "type": "File",
+                  "copy": "true",
+                  "description": "basic statistics in Excel",
+                  "constraints": {
+                     "extension": [
+                        "xlsx"
+                     ]
+                  }
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_ensembl_data",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Preparation of data from ensembl dataset",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "organism_name",
+                  "type": "String",
+                  "description": "Name of the organism in Latin"
+               },
+               {
+                  "name": "release_version",
+                  "type": "String",
+                  "description": "Ensembl release version"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "GTF file from ensembl dataset"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "Reference genome indexed"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Splicesites file"
+               },
+               {
+                  "name": "Standard err",
+                  "tye": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_concat_summary",
+               "author": "https://gitlab.com/MateuszMarynowksi",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Concatenate summary files from hisat2 (paired-end)",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "summary_files",
+                  "type": "Array[File]",
+                  "description": "summary files (paired-end)"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary_csv_file",
+                  "type": "File",
+                  "copy": "true",
+                  "description": "summary file in CSV",
+                  "constraints": {
+                     "extension": [
+                        "csv"
+                     ]
+                  }
+               },
+               {
+                  "name": "summary_excel_file",
+                  "type": "File",
+                  "copy": "true",
+                  "description": "summary file in Excel",
+                  "constraints": {
+                     "extension": [
+                        "xlsx"
+                     ]
+                  }
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffnorm",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "Array[File]",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "cuffnorm_output",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "cuffnorm output"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_0",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_1",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_2",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_3",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_4",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_5",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_6",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_7",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_8",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_fastqc_9",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "zip_files",
+                  "type": "Array[File]",
+                  "copy": "True",
+                  "description": "zip files from FastQC"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_0",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_1",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_2",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_3",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_4",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_5",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_6",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_7",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_8",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_hisat_9",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Alignment with hisat2",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "fastq_1",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "fastq_2",
+                  "type": "File",
+                  "description": "Fastq file 1 (paired-end)"
+               },
+               {
+                  "name": "ref_genome_index",
+                  "type": "Array[File]",
+                  "description": "reference genome indexed"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               },
+               {
+                  "name": "splicesites_file",
+                  "type": "File",
+                  "description": "splicesites file"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "bam_bai_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam bai file"
+               },
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "bam file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               },
+               {
+                  "name": "summary",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "summary file"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_0",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_1",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_2",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_3",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_4",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_5",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_6",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_7",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_8",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         },
+         {
+            "task_info": {
+               "name": "rna_seq_cuffquant_9",
+               "author": "https://gitlab.com/MateuszMarynowski",
+               "copyright": "Copyright 2019 Intelliseq",
+               "description": "Generic text for task",
+               "changes": {
+                  "latest": "no changes"
+               },
+               "pipeline_name": "rna_seq_paired_end"
+            },
+            "input_list": [
+               {
+                  "name": "bam_file",
+                  "type": "File",
+                  "description": "bam_file"
+               },
+               {
+                  "name": "gtf_file",
+                  "type": "File",
+                  "description": "gtf file"
+               },
+               {
+                  "name": "sample id",
+                  "type": "String",
+                  "description": "identifier of sample"
+               }
+            ],
+            "output_list": [
+               {
+                  "name": "abundances_file",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "abundances file"
+               },
+               {
+                  "name": "Biocompute object",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Biocompute object"
+               },
+               {
+                  "name": "Standard err",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard error"
+               },
+               {
+                  "name": "Standard out",
+                  "type": "File",
+                  "copy": "True",
+                  "description": "Standard out"
+               }
+            ]
+         }
+      ]
+   }
+}
