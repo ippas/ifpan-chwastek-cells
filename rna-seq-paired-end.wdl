@@ -1,11 +1,11 @@
-import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-ensembl-data@1.0.1/src/main/wdl/tasks/rna-seq-ensembl-data/latest/rna-seq-ensembl-data.wdl" as rna_seq_ensembl_data_task
-import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-hisat@1.0.0/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl" as rna_seq_hisat_task
-import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-cuffquant@1.0.0/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl" as rna_seq_cuffquant_task
-import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-cuffnorm@1.0.0/src/main/wdl/tasks/rna-seq-cuffnorm/latest/rna-seq-cuffnorm.wdl" as rna_seq_cuffnorm_task
-import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-concat-summary@1.0.0/src/main/wdl/tasks/rna-seq-concat-summary/latest/rna-seq-concat-summary.wdl" as rna_seq_concat_summary_task
-import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-fastqc@1.0.0/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl" as rna_seq_fastqc_task
-import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-qc-stats@1.0.0/src/main/wdl/tasks/rna-seq-qc-stats/latest/rna-seq-qc-stats.wdl" as rna_seq_qc_stats_task
-#import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-fastqc-overrep@1.0.0/src/main/wdl/tasks/rna-seq-fastqc-overrep/latest/rna-seq-fastqc-overrep.wdl" as rna_seq_fastqc_overrep_task
+import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-ensembl-data@1.0.3/src/main/wdl/tasks/rna-seq-ensembl-data/latest/rna-seq-ensembl-data.wdl" as rna_seq_ensembl_data_task
+import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-hisat@1.0.1/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl" as rna_seq_hisat_task
+import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-cuffquant@1.0.1/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl" as rna_seq_cuffquant_task
+import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-cuffnorm@1.0.1/src/main/wdl/tasks/rna-seq-cuffnorm/latest/rna-seq-cuffnorm.wdl" as rna_seq_cuffnorm_task
+import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-concat-summary@1.0.1/src/main/wdl/tasks/rna-seq-concat-summary/latest/rna-seq-concat-summary.wdl" as rna_seq_concat_summary_task
+import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-fastqc@1.0.1/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl" as rna_seq_fastqc_task
+import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-qc-stats@1.0.1/src/main/wdl/tasks/rna-seq-qc-stats/latest/rna-seq-qc-stats.wdl" as rna_seq_qc_stats_task
+#import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-fastqc-overrep@1.0.1/src/main/wdl/tasks/rna-seq-fastqc-overrep/latest/rna-seq-fastqc-overrep.wdl" as rna_seq_fastqc_overrep_task
 import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-merge-bco@1.0.0/src/main/wdl/tasks/rna-seq-merge-bco/latest/rna-seq-merge-bco.wdl" as rna_seq_merge_bco_task
 #import "https://gitlab.com/intelliseq/workflows/raw/dev/src/main/wdl/tasks/report-bco/latest/report-bco.wdl" as report_bco_task
 
@@ -18,8 +18,8 @@ workflow rna_seq_paired_end {
     description: '## RNA-Seq (paired-end)'
     changes: '{"latest": "no changes"}'
 
-    input_fastqs_1: '{"name": "fastq 1", type: "Array[File]", "description": "first fastq file"}'
-    input_fastqs_2: '{"name": "fastq 2", type: "Array[File]", "description": "second fastq file"}'
+    input_fastqs_1: '{"name": "fastq 1", "type": "Array[File]", "description": "first fastq file"}'
+    input_fastqs_2: '{"name": "fastq 2", "type": "Array[File]", "description": "second fastq file"}'
     input_samples_ids: '{"name": "samples_ids", "type": "Array[String]", "description": "identifiers of samples"}'
     input_organism_name: '{"name": "organism_name",  "type": "String", "description": "name of the organism in Latin"}'
     input_release_version: '{"name": "release_version",  "type": "String", "description": "ensembl release version"}'
