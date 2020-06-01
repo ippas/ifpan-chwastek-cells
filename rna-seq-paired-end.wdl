@@ -1,7 +1,8 @@
+import "https://gitlab.com/intelliseq/workflows/raw/fq-organize@1.1.0/src/main/wdl/tasks/fq-organize/fq-organize.wdl" as fq_organize_task
 import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-ensembl-data@1.0.3/src/main/wdl/tasks/rna-seq-ensembl-data/latest/rna-seq-ensembl-data.wdl" as rna_seq_ensembl_data_task
 import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-hisat@1.0.1/src/main/wdl/tasks/rna-seq-hisat/latest/rna-seq-hisat.wdl" as rna_seq_hisat_task
-import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-cuffquant@1.0.1/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl" as rna_seq_cuffquant_task
-import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-cuffnorm@1.0.1/src/main/wdl/tasks/rna-seq-cuffnorm/latest/rna-seq-cuffnorm.wdl" as rna_seq_cuffnorm_task
+import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-cuffquant@1.0.2/src/main/wdl/tasks/rna-seq-cuffquant/latest/rna-seq-cuffquant.wdl" as rna_seq_cuffquant_task
+import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-cuffnorm@1.0.2/src/main/wdl/tasks/rna-seq-cuffnorm/latest/rna-seq-cuffnorm.wdl" as rna_seq_cuffnorm_task
 import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-concat-summary@1.0.1/src/main/wdl/tasks/rna-seq-concat-summary/latest/rna-seq-concat-summary.wdl" as rna_seq_concat_summary_task
 import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-fastqc@1.0.1/src/main/wdl/tasks/rna-seq-fastqc/latest/rna-seq-fastqc.wdl" as rna_seq_fastqc_task
 import "https://gitlab.com/intelliseq/workflows/-/raw/rna-seq-qc-stats@1.0.1/src/main/wdl/tasks/rna-seq-qc-stats/latest/rna-seq-qc-stats.wdl" as rna_seq_qc_stats_task
@@ -18,9 +19,10 @@ workflow rna_seq_paired_end {
     description: '## RNA-Seq (paired-end)'
     changes: '{"latest": "no changes"}'
 
-    input_fastqs_1: '{"name": "fastq 1", "type": "Array[File]", "description": "first fastq file"}'
-    input_fastqs_2: '{"name": "fastq 2", "type": "Array[File]", "description": "second fastq file"}'
-    input_samples_ids: '{"name": "samples_ids", "type": "Array[String]", "description": "identifiers of samples"}'
+    input_fastqs: '{"name": "fastq files", "type": "Array[File]", "constraints": {"extension": ["fq.gz","fastq.gz"]}, "description": "List of gzipped fastq files [.fq.gz or .fastq.gz] with (both left and right)"}'
+    input_fastqs_left: '{"hidden":"true", "name": "fastq 1", "type": "Array[File]", "constraints": {"extension": ["fq.gz"]}, "description": "first fastq file"}'
+    input_fastqs_right: '{"hidden":"true", "name": "fastq 2", "type": "Array[File]", "constraints": {"extension": ["fq.gz"]}, "description": "second fastq file"}'
+    input_samples_names: '{"name": "samples_names", "type": "Array[String]", "description": "identifiers of samples"}'
     input_organism_name: '{"name": "organism_name",  "type": "String", "description": "name of the organism in Latin"}'
     input_release_version: '{"name": "release_version",  "type": "String", "description": "ensembl release version"}'
 
@@ -36,10 +38,11 @@ workflow rna_seq_paired_end {
     output_abundances_file: '{"name": "abundances_file", "type": "Array[File]", "copy": "True", "description": "abundances files"}'
     output_cuffnorm_output: '{"name": "cuffnorm_output", "type": "Array[File]", "copy": "True", "description": "cuffnorm outputs"}'
   }
-
-  Array[File] fastqs_1
-  Array[File] fastqs_2
-  Array[String] samples_ids
+  Array[File]? fastqs
+  Boolean is_fastqs_defined = defined(fastqs)
+  Array[File]? fastqs_left
+  Array[File]? fastqs_right
+  Array[String]? samples_names
   String organism_name
   String release_version
   String genome_basename = sub(organism_name, " ", "_") + "_genome"
@@ -47,6 +50,16 @@ workflow rna_seq_paired_end {
   String summary_file_name = "summary"
   String pipeline_name = "rna_seq_paired_end"
   String pipeline_version = "latest"
+
+  if(is_fastqs_defined) {
+    call fq_organize_task.fq_organize {
+      input:
+        fastqs = fastqs
+    }
+  }
+  Array[File] fastqs_1 = select_first([fq_organize.fastqs_1, fastqs_left])
+  Array[File] fastqs_2 = select_first([fq_organize.fastqs_2, fastqs_right])
+  Array[String] samples_ids = select_first([fq_organize.samples_ids, samples_names])
 
   scatter (index in range(length(fastqs_1))) {
     call rna_seq_fastqc_task.rna_seq_fastqc {
