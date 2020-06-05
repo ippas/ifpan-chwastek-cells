@@ -31,9 +31,4 @@ docker run -it -v $PWD:/data octavianus90/cufflinks_final:latest
 5. Multiqc was run to generate a joint QC report:
 `docker run --rm -v $PWD:/data ewels/multiqc:latest multiqc /data -o /data`
 
-6. A bco-report was created with [this task](report-bcl.wdl)
-
-************* report here ******************
-
-
-
+[link to multiqc report]()
