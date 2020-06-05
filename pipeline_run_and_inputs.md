@@ -26,7 +26,7 @@ to run cuffnorm:
 
 ```
 docker run -it -v $PWD:/data octavianus90/cufflinks_final:latest
-cuffnorm -o /data/cuffnorm /data/Homo_sapiens.GRCh38.100.gtf.gz /data/cuffquant/*
+      $ cuffnorm -o /data/cuffnorm /data/Homo_sapiens.GRCh38.100.gtf /data/cuffquant/*
 ```
 5. Multiqc was run to generate a joint QC report:
 `docker run --rm -v $PWD:/data ewels/multiqc:latest multiqc /data -o /data`
