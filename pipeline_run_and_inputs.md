@@ -31,4 +31,4 @@ docker run -it -v $PWD:/data octavianus90/cufflinks_final:latest
 5. Multiqc was run to generate a joint QC report:
 `docker run --rm -v $PWD:/data ewels/multiqc:latest multiqc /data -o /data`
 
-[link to multiqc report]()
+[link to multiqc report](http://149.156.177.112/projects/ifpan-chwastek-cells/fastqc/multiqc_report.html#fastqc)
