@@ -9,7 +9,7 @@ All samples were checked for quality with fastQC v0.11.9 and aligned to a GRCh38
 All statisical analyses were performed with R software v3.6. [Click here for the analysis code](analysis.R). R was run in this docker container: `rocker/rstudio:3.6.3-ubuntu18.04` with this command:
 `docker run -d -p 8998:8787 -e PASSWORD=temporary -v $(pwd):/home/rstudio/data -e ROOT=TRUE rocker/rstudio:3.6.3-ubuntu18.04`
 and then locally:
-`ssh -N -f -L localhost:8889:localhost:8889 ifpan`
+`ssh -N -f -L localhost:8998:localhost:8998 ifpan`
 
 
 See [this file](pipeline_run_and_inputs.md) for details on preprocessing.
