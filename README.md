@@ -1,6 +1,6 @@
 ## RNA-Seq in Ostheoarthritis model
 
-Patients cells treated with 3 compounds (4 h, 10 ng/ml), 2-TNFa, 3-LPS, 4-IFg.
+Patients cells treated with 3 compounds (4 h, 10 ng/ml), 1-ctrl 2-IFNg, 3-TNFa, 4-LPS
 
 ### Methods:
 
